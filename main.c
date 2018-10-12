@@ -2,15 +2,16 @@
 #include <stdbool.h>
 
 int main() {
-    int rok;
-    bool przestepny;
+    int a = 7;
+    int b =3;
+    int max, min;
 
-    printf("Podaj rok: ");
-    scanf("%i", &rok);
+    max =a>b ? a:b;
+    printf("maksimum: %i\n", max);
 
-    przestepny = !(rok % 4) && rok % 100 || !(rok%400);
+    min = a<b ? a:b;
+    printf("minimum: %i\n", min);
 
-    printf("%i", przestepny);
 
     return 0;
 }
